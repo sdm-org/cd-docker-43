@@ -29,7 +29,7 @@ initializeDb( db => {
 	// internal middleware 
 	app.use(middleware({ config, db }));
 
-	// api router
+	// api router 
 	app.use('/api', api({ config, db }));
 
 	app.server.listen(process.env.PORT || config.port, () => {
